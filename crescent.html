@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="sortDate.js"></script>
+<body style="background-color:black;">
+
+<svg xmlns="http://www.w3.org/1999/xhtml">
+  <path d="M 200,20
+           A 63,63 0,1,0 200,140
+           A 61,61 0,1,1 200,20z"
+           stroke="black" stroke-width="1" fill="yellow"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/1999/xhtml">
+  <path d="M 100,50
+           A 63,63 180,1,0 220,50
+           A 61,61 180,1,1 100,50z"
+           stroke="black" stroke-width="1" fill="yellow"/>
+</svg>
+
+<div style="background-color:white;">
+
+<label for="dateArr">
+<input type="date" id="dateArr" name="dateArr" value="2022-01-28" onchange="addToArray()">
+</label>
+
+<button onClick="sortDateArray()">Sort</button>
+
+<p id="unsortedArray">
+  Unsorted array:
+</p>
+<p id="sortedArray">
+  Sorted array:
+</p>
+</div>
+</body>
+</html>
